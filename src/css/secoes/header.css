@@ -16,19 +16,6 @@
     justify-content: space-between;
 }
 
-.header .logo{
-    font-family: var(--fonte-secundaria);
-    font-size: var(--fonte-extra-grande);
-    border: 2px solid var(--cor-branca);
-    border-radius: 50%;
-    width: 65px;
-    height: 65px;
-    line-height: 59px;
-    text-align: center;
-    text-decoration: underline;
-    transition: 0.2s;
-}
-
 .header .container img{
     width: 150px;
     border-radius: 50%;
@@ -59,7 +46,7 @@
 }
 
 .header nav li a:hover{
-    background-color: #5f499f;
+    background-color: var(--cor-primaria);
 }
 
 .header .menu{
@@ -144,6 +131,7 @@
 
     .header{
         height: 150px;
+        background-image: url(secoes-img/keyboard-mobile.png);
     }
 
     .header .container img{

@@ -22,7 +22,7 @@
 .home .img-home .img-box img{
     max-width: 100%;
     border-radius: 50%;
-    border: 10px solid transparent;
+    border: 10px solid var(--cor-primaria); 
 }
 
 .home .texto-home p{

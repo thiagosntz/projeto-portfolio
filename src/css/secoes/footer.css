@@ -1,7 +1,7 @@
 .footer{
     margin-top: 7rem;
     text-align: center;
-    background-color: var(--cor-fundo-cinza-claro);
+    background-color: rgb(50, 42, 57);
     padding: 5rem 0;
 }
 
@@ -11,4 +11,15 @@
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+
+    .footer .container a{
+        margin: 15px;
+    }
+
+    .footer a i{
+        font-size: 3rem;
+    }
 }
