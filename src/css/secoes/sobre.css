@@ -23,10 +23,60 @@
     margin-top: 50px;
 }
 
-.sobre-mim .informacoes-sobre-mim p{
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+.sobre-mim .informacoes-sobre-mim{
+    width: 90%;
 }
+
+.sobre-mim .informacoes-sobre-mim .items .item{
+    cursor: pointer;
+    background-image: url(secoes-img/icone-seta-fechada.png);
+    background-repeat: no-repeat;
+    background-position: top 8px right 0;
+    background-size: 12px;
+    border-bottom: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+.sobre-mim .informacoes-sobre-mim .items .item:last-child {
+    border-bottom: none;
+}
+
+.sobre-mim .informacoes-sobre-mim .items .titulo-sobre-mim{
+    padding-bottom: 15px;
+    transition: 0.2s ease;
+    font-size: 17px;
+    font-weight: 500;
+    width: 90%;
+    font-weight: 500;
+}
+
+.informacoes-sobre-mim .items .titulo-sobre-mim:hover{
+    color: var(--cor-secundaria);
+}
+
+.informacoes-sobre-mim .items .texto-sobre-mim{
+    display: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+/* ACORDEON ATIVO */
+.informacoes-sobre-mim .items .item.ativo h2{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.informacoes-sobre-mim .items .item.ativo .texto-sobre-mim{
+    display: block;
+}
+
+.informacoes-sobre-mim .items .item.ativo{
+    background-image: url(secoes-img/icone-seta-aberta.png);
+}
+
+
 
 @media (max-width: 1280px) {
     .sobre-mim .row{
@@ -41,7 +91,6 @@
 
     .sobre-mim .informacoes-sobre-mim{
         padding: 0 var(--mobile-padding);
-        text-align: center;
         max-width: 70%;
     }
 
@@ -52,3 +101,6 @@
         max-width: 100%;
     }
 }
+
+
+
